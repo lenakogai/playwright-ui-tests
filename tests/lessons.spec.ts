@@ -15,13 +15,3 @@ test('Тестовый запуск1', async({page})=>{
     await expect(locator).toHaveText('Search')
 })
 */
-
-// Урок 2
-
-/*
-test.only('Тестовый запуск1', async({page})=>{
-    await page.goto('https://jpetstore.aspectran.com/catalog/')
-    const locator = page.locator('.MenuContent', {hasText: 'Sign Up'})
-    await expect(locator).toBeVisible()
-})
-*/
