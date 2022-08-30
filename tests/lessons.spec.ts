@@ -59,7 +59,7 @@ test('Вложенный элемент. Обращение к дочернем�
     await expect(searchToClass).toBeVisible()
 })
 
-test.only('Вложенный элемент. Проверка наличия атрибутов через функцию toHaveAttribute()', async({page})=>{
+test('Вложенный элемент. Проверка наличия атрибутов через функцию toHaveAttribute()', async({page})=>{
 
     await page.goto('https://jpetstore.aspectran.com/catalog/')
     await expect(page).toHaveURL('https://jpetstore.aspectran.com/catalog/')
