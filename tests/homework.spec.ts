@@ -38,7 +38,7 @@ test('Селекторы: CSS ID', async({page})=>{
 test('Селекторы: CSS Class', async({page})=>{
     await page.goto('https://jpetstore.aspectran.com/catalog/')
     await expect(page).toHaveURL('https://jpetstore.aspectran.com/catalog/')
-    const navigationClass = page.locator('.grid-container').nth(4)
+    const navigationClass = page.locator('.grid-container').nth(2)
     await expect(navigationClass).toBeVisible()
 })
 
