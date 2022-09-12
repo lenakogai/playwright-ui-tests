@@ -52,7 +52,7 @@ test('Ввести валидные данные в поля username и passwor
     // Проверяем успешность авторизации
     const elementWelcome = page.locator('[id="WelcomeContent"]')
     await expect(elementWelcome).toBeVisible()
-    await expect(elementWelcome).toHaveText('Welcome 123456!')
+    await expect(elementWelcome).toHaveText('Welcome john!')
 })
 
 test('Ввести невалидные данные в поля username и password, нажать на Login → ошибка, авторизация не успешна', async({page})=>{
@@ -192,7 +192,7 @@ test('Ввести валидные данные в поле username и не з
     await expect(elementLoginFailed).toHaveText('Invalid username or password.  Signon failed.')
 })
 
-test.only('Не заполнять поле username и ввести валидные данные в поле password, нажать на Login → ошибка, авторизация не успешна', async({page})=>{
+test('Не заполнять поле username и ввести валидные данные в поле password, нажать на Login → ошибка, авторизация не успешна', async({page})=>{
 
     await page.goto('https://jpetstore.aspectran.com/account/signonForm')
     await expect(page).toHaveURL('https://jpetstore.aspectran.com/account/signonForm')

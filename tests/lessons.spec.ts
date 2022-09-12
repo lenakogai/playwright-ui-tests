@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 // Урок 1
 
-/*
+
 test('Тестовый запуск1', async({page})=>{
     await page.goto('https://jpetstore.aspectran.com/catalog/')
     await expect(page).toHaveURL('https://jpetstore.aspectran.com/catalog/')
@@ -14,4 +14,3 @@ test('Тестовый запуск1', async({page})=>{
     await expect(search).toBeVisible()
     await expect(locator).toHaveText('Search')
 })
-*/
