@@ -276,3 +276,4 @@ test('Обращение к дочернему элементу', async({page})=
     const headerMenu = page.locator('[id="Header"]>>[id="Menu"]')
     await expect(headerMenu).toBeVisible()
 })
+});
