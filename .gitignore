@@ -3,6 +3,3 @@ node_modules/
 /playwright-report/
 /playwright/.cache/
 /test-results/
-tests/example.spec.ts
-tests-examples/demo-todo-app.spec.ts
-e2e/example.spec.ts
