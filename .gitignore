@@ -3,6 +3,5 @@ node_modules/
 /playwright-report/
 /playwright/.cache/
 /test-results/
-example.spec.ts
-lessons.spec.ts
-demo-todo-app.spec.ts
+tests/example.spec.ts
+tests-examples/demo-todo-app.spec.ts
