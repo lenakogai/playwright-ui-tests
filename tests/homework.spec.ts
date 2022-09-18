@@ -9,23 +9,18 @@ test('Селекторы: текст', async({page})=>{
     // Селектор для элемента Fish
     const fish = page.locator('text=Fish').nth(0)
     await expect(fish).toBeVisible()
-    await expect(fish).toHaveText('Fish')
     // Селектор для элемента Dogs
     const dogs = page.locator('text=Dogs').nth(0)
     await expect(dogs).toBeVisible()
-    await expect(dogs).toHaveText('Dogs')
     // Селектор для элемента Reptiles
     const reptiles = page.locator('text=Reptiles').nth(0)
     await expect(reptiles).toBeVisible()
-    await expect(reptiles).toHaveText('Reptiles')
     // Селектор для элемента Cats
     const cats = page.locator('text=Cats').nth(0)
-    await expect(cats).toBeVisible()
-    await expect(cats).toHaveText('Cats')    
+    await expect(cats).toBeVisible()   
     // Селектор для элемента Birds
     const birds = page.locator('text=Birds').nth(0)
-    await expect(birds).toBeVisible()
-    await expect(birds).toHaveText('Birds')  
+    await expect(birds).toBeVisible() 
 })
 
 // Задание 2
