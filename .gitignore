@@ -5,3 +5,4 @@ node_modules/
 /test-results/
 example.spec.ts
 lessons.spec.ts
+demo-todo-app.spec.ts
