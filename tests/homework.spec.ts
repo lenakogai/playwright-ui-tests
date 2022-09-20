@@ -21,6 +21,9 @@ test.describe('Урок 2: домашнее задание #1', () => {
         await expect(fieldPassword).toBeVisible()
         await expect(buttonLogin).toBeVisible()
         await expect(panelRegister).toBeVisible()  
+        const loginText = page.locator('text=Login')
+        await expect(loginText).toHaveCSS('color','rgb(254, 254, 254)')
+        await expect(loginText).toHaveCSS('background-color','rgb(81, 97, 105)')
     })
     
     // Задание 3
