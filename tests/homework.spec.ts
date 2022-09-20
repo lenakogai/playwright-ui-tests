@@ -14,7 +14,6 @@ test.describe.only('Урок 2: домашнее задание #1', () => {
     
     // Задание 2
     test('Наличие элементов на странице', async({page})=>{
-        await expect(page).toHaveURL('https://jpetstore.aspectran.com/account/signonForm')
         const fieldUsername = page.locator('[name="username"]')
         const fieldPassword = page.locator('[name="password"]')
         const buttonLogin = page.locator('[class="button-bar"]').last()
@@ -28,7 +27,6 @@ test.describe.only('Урок 2: домашнее задание #1', () => {
     
     // Задание 3
     test('Ввести валидные данные в поля username и password, нажать на Login → авторизация успешна', async({page})=>{
-        await expect(page).toHaveURL('https://jpetstore.aspectran.com/account/signonForm')
         // Очищаем поле и вводим username
         const fieldUsername = page.locator('[name="username"]')
         await expect(fieldUsername).toBeVisible()
@@ -54,7 +52,6 @@ test.describe.only('Урок 2: домашнее задание #1', () => {
     })
     
     test('Ввести невалидные данные в поля username и password, нажать на Login → ошибка, авторизация не успешна', async({page})=>{
-        await expect(page).toHaveURL('https://jpetstore.aspectran.com/account/signonForm')
         // Очищаем поле и вводим username
         const fieldUsername = page.locator('[name="username"]')
         await expect(fieldUsername).toBeVisible()
@@ -81,7 +78,6 @@ test.describe.only('Урок 2: домашнее задание #1', () => {
     
     test('Ввести валидные данные в поле username, в password невалидные, нажать на Login → ошибка, авторизация не успешна', async({page})=>{
 
-        await expect(page).toHaveURL('https://jpetstore.aspectran.com/account/signonForm')
         // Очищаем поле и вводим username
         const fieldUsername = page.locator('[name="username"]')
         await expect(fieldUsername).toBeVisible()
@@ -108,7 +104,6 @@ test.describe.only('Урок 2: домашнее задание #1', () => {
     
     test('Ввести невалидные данные в поле username, в поле password валидные, нажать на Login → ошибка, авторизация не успешна', async({page})=>{
     
-        await expect(page).toHaveURL('https://jpetstore.aspectran.com/account/signonForm')
         // Очищаем поле и вводим username
         const fieldUsername = page.locator('[name="username"]')
         await expect(fieldUsername).toBeVisible()
@@ -135,7 +130,6 @@ test.describe.only('Урок 2: домашнее задание #1', () => {
     
     test('Не заполнять поля username и password, нажать на Login → ошибка, авторизация не успешна', async({page})=>{
     
-        await expect(page).toHaveURL('https://jpetstore.aspectran.com/account/signonForm')
         // Очищаем поле username
         const fieldUsername = page.locator('[name="username"]')
         await expect(fieldUsername).toBeVisible()
@@ -160,7 +154,6 @@ test.describe.only('Урок 2: домашнее задание #1', () => {
     
     test('Ввести валидные данные в поле username и не заполнять поле password, нажать на Login → ошибка, авторизация не успешна', async({page})=>{
     
-        await expect(page).toHaveURL('https://jpetstore.aspectran.com/account/signonForm')
         // Вводим username
         const fieldUsername = page.locator('[name="username"]')
         await expect(fieldUsername).toBeVisible()
@@ -186,7 +179,6 @@ test.describe.only('Урок 2: домашнее задание #1', () => {
     
     test('Не заполнять поле username и ввести валидные данные в поле password, нажать на Login → ошибка, авторизация не успешна', async({page})=>{
     
-        await expect(page).toHaveURL('https://jpetstore.aspectran.com/account/signonForm')
         // Очищаем поле username
         const fieldUsername = page.locator('[name="username"]')
         await expect(fieldUsername).toBeVisible()
