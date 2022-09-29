@@ -262,7 +262,7 @@ test.describe('Урок 3: домашнее задание #2', () => {
     })
     });
 
-
+test.describe('Урок 4: домашнее задание #5', () => {
     test.beforeEach( async({page})=>{    
         // Очищаем поле и вводим username
         const fieldUsername = page.locator('[name="username"]')
@@ -286,8 +286,6 @@ test.describe('Урок 3: домашнее задание #2', () => {
         const elementWelcome = page.locator('[id="WelcomeContent"]')
         await expect(elementWelcome).toBeVisible()
     })
-    
-test.describe('Урок 4: домашнее задание #5', () => {
 
     // Задание 1
 
