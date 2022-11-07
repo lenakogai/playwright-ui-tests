@@ -3,13 +3,13 @@ import {test} from '../fixtures/authFixture';
 import { AuthPage } from '../pages/authPage';
 
 test.describe('Общие проверки', () => {
-
+    
     test.beforeEach(async({authPage})=>{    
         await authPage.goToAuthPage()
     })
 
     // Задание 2
-    test('Наличие элементов на странице', async({authPage})=>{
+    test.only('Наличие элементов на странице', async({authPage})=>{
         await expect(authPage.username).toBeVisible()
         await expect(authPage.password).toBeVisible()
         await expect(authPage.buttonLogin).toBeVisible()
@@ -19,7 +19,7 @@ test.describe('Общие проверки', () => {
     })
     
     // Задание 3
-    test.only('Ввести валидные данные в поля username и password, нажать на Login → авторизация успешна', async({authPage})=>{
+    test('Ввести валидные данные в поля username и password, нажать на Login → авторизация успешна', async({authPage})=>{
         // Очищаем поле и вводим username
         await authPage.clickUsernameFieldAndClear()
         await authPage.username.type('j2ee')
