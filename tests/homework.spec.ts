@@ -1,10 +1,11 @@
 import { test, expect } from '@playwright/test';
 
-test.beforeEach( async({page})=>{    
-    await page.goto('https://jpetstore.aspectran.com/account/signonForm')
-})
-
 test.describe('Урок 2: домашнее задание #1', () => {
+
+    
+    test.beforeEach( async({page})=>{    
+        await page.goto('https://jpetstore.aspectran.com/account/signonForm')
+    })
 
     // Задание 1
     test('Проверка url страницы авторизации', async({page})=>{
