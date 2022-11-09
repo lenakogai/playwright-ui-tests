@@ -11,6 +11,7 @@ export class AuthPage {
     readonly elementLoginFailed: Locator
     
     constructor(page:Page){
+        this.page = page
         this.username = page.locator('[name="username"]')
         this.password = page.locator('[name="password"]')
         this.buttonLogin = page.locator('[class="button-bar"]').last()
