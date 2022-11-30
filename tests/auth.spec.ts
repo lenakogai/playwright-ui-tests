@@ -24,7 +24,7 @@ test.describe('Общие проверки', () => {
         await authPage.clickUsernameFieldAndClear()
         await authPage.username.type('6789045676434566577868')
         // Очищаем поле и вводим password
-        await authPage.clearPasswordFieldAndClear()
+        await authPage.clickPasswordFiedlAndClear()
         await authPage.password.type('666111')
         // Нажимаем Login
         await authPage.clickButtonLogin()
@@ -38,7 +38,7 @@ test.describe('Общие проверки', () => {
         await authPage.clickUsernameFieldAndClear()
         await authPage.username.type('какой-то юзер')
         // Очищаем поле и вводим password
-        await authPage.clearPasswordFieldAndClear()
+        await authPage.clickPasswordFiedlAndClear()
         await authPage.password.type('123456')
         // Нажимаем Login
         await authPage.clickButtonLogin()
@@ -52,7 +52,7 @@ test.describe('Общие проверки', () => {
         await authPage.clickUsernameFieldAndClear()
         await authPage.username.type('6789045676434566577868')
         // Очищаем поле и вводим password
-        await authPage.clearPasswordFieldAndClear()
+        await authPage.clickPasswordFiedlAndClear()
         await authPage.password.type('1234567890')
         // Нажимаем Login
         await authPage.clickButtonLogin()
@@ -66,7 +66,7 @@ test.describe('Общие проверки', () => {
         await authPage.clickUsernameFieldAndClear()
         await authPage.username.type('какой-то юзер')
         // Очищаем поле и вводим password
-        await authPage.clearPasswordFieldAndClear()
+        await authPage.clickPasswordFiedlAndClear()
         await authPage.password.type('666111')
         // Нажимаем Login
         await authPage.clickButtonLogin()
@@ -79,7 +79,7 @@ test.describe('Общие проверки', () => {
         // Очищаем поле username
         await authPage.clickUsernameFieldAndClear()
         // Очищаем поле password
-        await authPage.clearPasswordFieldAndClear()
+        await authPage.clickPasswordFiedlAndClear()
         // Нажимаем Login
         await authPage.clickButtonLogin()
         // Проверяем ошибку при авторизации
@@ -92,7 +92,7 @@ test.describe('Общие проверки', () => {
         await authPage.clickUsernameFieldAndClear()
         await authPage.username.type('6789045676434566577868')
         // Очищаем поле password
-        await authPage.clearPasswordFieldAndClear()
+        await authPage.clickPasswordFiedlAndClear()
         // Нажимаем Login
         await authPage.clickButtonLogin()
         // Проверяем ошибку при авторизации
@@ -104,7 +104,7 @@ test.describe('Общие проверки', () => {
         // Очищаем поле username
         await authPage.clickUsernameFieldAndClear()
         // Очищаем поле и вводим password
-        await authPage.clearPasswordFieldAndClear()
+        await authPage.clickPasswordFiedlAndClear()
         await authPage.password.type('666111')
         // Нажимаем Login
         await authPage.clickButtonLogin()
