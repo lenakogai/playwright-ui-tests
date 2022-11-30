@@ -9,7 +9,7 @@ test.describe('Общие проверки', () => {
     })
 
     // Задание 2
-    test.only('Наличие элементов на странице', async({authPage})=>{
+    test('Наличие элементов на странице', async({authPage})=>{
         await expect(authPage.username).toBeVisible()
         await expect(authPage.password).toBeVisible()
         await expect(authPage.buttonLogin).toBeVisible()
@@ -22,15 +22,15 @@ test.describe('Общие проверки', () => {
     test('Ввести валидные данные в поля username и password, нажать на Login → авторизация успешна', async({authPage})=>{
         // Очищаем поле и вводим username
         await authPage.clickUsernameFieldAndClear()
-        await authPage.username.type('j2ee')
+        await authPage.username.type('6789045676434566577868')
         // Очищаем поле и вводим password
         await authPage.clearPasswordFieldAndClear()
-        await authPage.password.type('j2ee')
+        await authPage.password.type('666111')
         // Нажимаем Login
         await authPage.clickButtonLogin()
         // Проверяем успешность авторизации
         await expect(authPage.elementWelcome).toBeVisible()
-        await expect(authPage.elementWelcome).toHaveText('Welcome likhitha!')
+        await expect(authPage.elementWelcome).toHaveText('Welcome Lena!')
     })
     
     test('Ввести невалидные данные в поля username и password, нажать на Login → ошибка, авторизация не успешна', async({authPage})=>{
@@ -50,7 +50,7 @@ test.describe('Общие проверки', () => {
     test('Ввести валидные данные в поле username, в password невалидные, нажать на Login → ошибка, авторизация не успешна', async({authPage})=>{
         // Очищаем поле и вводим username
         await authPage.clickUsernameFieldAndClear()
-        await authPage.username.type('j2ee')
+        await authPage.username.type('6789045676434566577868')
         // Очищаем поле и вводим password
         await authPage.clearPasswordFieldAndClear()
         await authPage.password.type('1234567890')
@@ -67,7 +67,7 @@ test.describe('Общие проверки', () => {
         await authPage.username.type('какой-то юзер')
         // Очищаем поле и вводим password
         await authPage.clearPasswordFieldAndClear()
-        await authPage.password.type('j2ee')
+        await authPage.password.type('666111')
         // Нажимаем Login
         await authPage.clickButtonLogin()
         // Проверяем ошибку при авторизации
@@ -90,7 +90,7 @@ test.describe('Общие проверки', () => {
     test('Ввести валидные данные в поле username и не заполнять поле password, нажать на Login → ошибка, авторизация не успешна', async({authPage})=>{   
         // Вводим username
         await authPage.clickUsernameFieldAndClear()
-        await authPage.username.type('j2ee')
+        await authPage.username.type('6789045676434566577868')
         // Очищаем поле password
         await authPage.clearPasswordFieldAndClear()
         // Нажимаем Login
@@ -105,7 +105,7 @@ test.describe('Общие проверки', () => {
         await authPage.clickUsernameFieldAndClear()
         // Очищаем поле и вводим password
         await authPage.clearPasswordFieldAndClear()
-        await authPage.password.type('j2ee')
+        await authPage.password.type('666111')
         // Нажимаем Login
         await authPage.clickButtonLogin()
         // Проверяем ошибку при авторизации
