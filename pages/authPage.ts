@@ -39,7 +39,7 @@ export class AuthPage {
         await this.clearUsernameField()
       }
 
-// Нажатие и очистка поля passeord
+// Нажатие и очистка поля password
       async clickPasswordField(){
         await this.password.click()
       }
@@ -47,7 +47,7 @@ export class AuthPage {
         await this.password.press('Control+A')
         await this.password.press('Backspace')
       }
-      async clearPasswordFieldAndClear(){
+      async clickPasswordFiedlAndClear(){
         await this.clickPasswordField()
         await this.clearPasswordField()
       }
