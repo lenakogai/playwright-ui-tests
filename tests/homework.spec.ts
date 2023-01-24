@@ -13,7 +13,7 @@ test.describe('Урок 2: домашнее задание #1', () => {
     })
     
     // Задание 2
-    test('Наличие элементов на странице', async({page})=>{
+    test.only('Наличие элементов на странице', async({page})=>{
         const fieldUsername = page.locator('[name="username"]')
         const fieldPassword = page.locator('[name="password"]')
         const buttonLogin = page.locator('[class="button-bar"]').last()
